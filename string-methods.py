@@ -61,3 +61,48 @@ print(credit_number[-1]) # con il negativo parte dalla fine, in questo caso 6
 print(credit_number[::3]) # con step ogni 3 caratteri
 print(credit_number[::-1]) # reverse string
 
+# PRESO DA ALTRO TUTORIAL
+
+# --- STRING ---
+x = "ciao"
+y = 'ciao'
+print(x+y)
+
+k = """ciao, io sono una
+multi riga stringa
+scrivo quanto voglio senza usare apici
+ad ogni riga """
+print(k)
+
+print(len(y)) # length
+print(y[1]) # accesso al carattere, essendo una stringa una array di carratteri
+
+for carattere in "computer": print(carattere)
+
+z = " ciao, sono Lorenzo "
+print(z[:3]) # dal carattere 0 al 3
+print(z[9:16]) # dal carattere 9 al 16
+print(z[-7]) # 7 caratteri indietro dall'ultimo carattere
+print(z[-7:]) # dall'ultimo carattere fino a 7 indietro
+print(z.lower())
+print(z.upper())
+print(z.strip()) # toglie spazi, tipo trim
+print(z.replace("L", "#"))
+print(z.split(",")) #crea array dividendo la stringa in base al separatore che gli do io
+
+# format (combinare string e numeri)
+prova = "ciao sono Lorenzo e sono nato il {}/{}/{}"
+print(prova.format(15, 12, 2023))
+
+# posso anche assegnare degli indici con il format
+prova = "ciao sono Lorenzo e sono nato il {2}, {1}, {0}"
+print(prova.format(2023, 12, 28))
+
+# indici nominali
+prova = "Ciao sono Francesca e ho {eta}, compiuti il {mese} del {anno}"
+print(prova.format(eta=33, mese="Giugno", anno=2023))
+ 
+# escapes con \
+print('sono alla ricerca dell\'amore')
+print("sono alla ricerca dell\"amore\" ")
+
