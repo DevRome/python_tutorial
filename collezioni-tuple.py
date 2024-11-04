@@ -1,7 +1,11 @@
 
-# --- Tuple ---
-# sono collezioni di dati ordinate, indicizzate, non modificabili e permettono duplicati
-# una volta create non si possono modificare
+# --- Tuple () ---
+# sono collezioni di dati 
+# - ordinate
+# - indicizzate, 
+# - non modificabili e permettono duplicati
+# - una volta create non si possono modificare
+# - SONO PIU' VELOCI DELLE LIST
 
 # creo tupla
 citta = ("milano", "roma", "napoli", "venezia")

@@ -1,5 +1,9 @@
-# --- Dictionary ---
-# rappresentano coppie chiave-valore, sono collezioni di dati ordinate, modificabili ma non permettono duplicati, nel senso che le chiavi non  possono essere duplicate all'interno dello stesso dictionary
+# --- Dictionary {} ---
+# rappresentano coppie chiave-valore, sono collezioni di dati: 
+# - ordinate
+# - modificabili
+# - NON permettono duplicati, nel senso che le chiavi non  possono essere duplicate all'interno dello stesso dictionary
+# Ricordano un po' gli oggetti in JS
 
 persona = {
     "nome": "Luca",
@@ -55,4 +59,14 @@ for x, y in persona.items(): print(x, y)
 # copiare persona (2 metodi)
 newPersona = persona.copy()
 newPersona2 = dict(persona)
+
+# iterare mostrando le keys e i relativi values
+capitals = {
+    "Germany": "Berlin",
+    "Italy": "Rome",
+    "Ireland": "Dublin"
+}
+
+for key, value in capitals.items():
+    print(f"{key}, {value}")
 

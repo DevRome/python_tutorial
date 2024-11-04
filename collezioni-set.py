@@ -1,6 +1,10 @@
 
-# --- Set ---
-# collezioni di dati non ordinate, non indicizzate, non modificabili e non permettono duplicati
+# --- Set {} ---
+# collezioni di dati: 
+# - non ordinate
+# - non indicizzate
+# - non modificabili e non permettono duplicati
+# - si possono comunque aggiungere e rimuovere elementi!
 
 set1 = {"milano", "roma", "napoli"}
 set2 = {"milano", "genova", "montecarlo"}

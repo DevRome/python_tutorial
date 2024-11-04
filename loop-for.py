@@ -24,3 +24,15 @@ else:
 for i in range(3):
     for j in range(4):
         print("(" + str(i) + " : " + str(j) + ")")
+
+# esmepio 6
+# stampa i  numeri da 1 a 10
+for x in range(1, 11): print(x)
+
+# esmepio 7
+# stampa i  numeri da 10 a 1
+for x in reversed(range(1, 11)): print(x)
+
+# esmepio 8
+# stampa i  numeri da 1 a 10 con lo step indicato nel terzo parametro, in questo caso 2
+for x in range(1, 11, 2): print(x)

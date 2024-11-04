@@ -1,5 +1,27 @@
-name = input("Enter your full name")
+# --- STRING ---
+x = "ciao"
+y = 'ciao'
+print(x + y) # le stringhe vengono unite così
+
+
+# Stringa multi-apici
+k = """ciao, io sono una
+multi riga stringa
+scrivo quanto voglio senza usare apici
+ad ogni riga """
+print(k)
+
+
+# iterazione su una stringa
+for carattere in "computer": print(carattere)
+
+
+name = input("Enter your full name: ")
 print(name)
+
+
+# accesso ad un carattere della stringa
+print(name[1]) # accesso al carattere, essendo una stringa una array di carratteri
 
 
 # len -> restituisce lunghezza string, in valore integer
@@ -51,6 +73,15 @@ result = phoneNumber.replace("3", "$")
 print(result)
 
 
+#  split -> crea array dividendo la stringa ini base al separatore che gli fornisco
+z = " ciao! sono Lorenzo "
+print(z.split(",")) 
+
+
+# strip -> toglie gli spazi
+print(z.strip()) # toglie spazi, tipo trim
+
+
 # string indexing [start : end : step]
 credit_number = "1234-5678-9012-3456"
 print(credit_number[4])
@@ -61,35 +92,8 @@ print(credit_number[-1]) # con il negativo parte dalla fine, in questo caso 6
 print(credit_number[::3]) # con step ogni 3 caratteri
 print(credit_number[::-1]) # reverse string
 
-# PRESO DA ALTRO TUTORIAL
 
-# --- STRING ---
-x = "ciao"
-y = 'ciao'
-print(x+y)
-
-k = """ciao, io sono una
-multi riga stringa
-scrivo quanto voglio senza usare apici
-ad ogni riga """
-print(k)
-
-print(len(y)) # length
-print(y[1]) # accesso al carattere, essendo una stringa una array di carratteri
-
-for carattere in "computer": print(carattere)
-
-z = " ciao, sono Lorenzo "
-print(z[:3]) # dal carattere 0 al 3
-print(z[9:16]) # dal carattere 9 al 16
-print(z[-7]) # 7 caratteri indietro dall'ultimo carattere
-print(z[-7:]) # dall'ultimo carattere fino a 7 indietro
-print(z.lower())
-print(z.upper())
-print(z.strip()) # toglie spazi, tipo trim
-print(z.replace("L", "#"))
-print(z.split(",")) #crea array dividendo la stringa in base al separatore che gli do io
-
+# ---- FORMAT SPECIFIERS ----
 # format (combinare string e numeri)
 prova = "ciao sono Lorenzo e sono nato il {}/{}/{}"
 print(prova.format(15, 12, 2023))
@@ -97,6 +101,21 @@ print(prova.format(15, 12, 2023))
 # posso anche assegnare degli indici con il format
 prova = "ciao sono Lorenzo e sono nato il {2}, {1}, {0}"
 print(prova.format(2023, 12, 28))
+
+# arrotondare a cifra decimale precisa:
+price1 = 1.149
+price2 = 1.29
+print(f"Price1 = {price1:.2f} Price2 = {price2:.1f}")
+
+# mostrare segni + e - delle cifre, con il flag +
+temperature1 = -10
+temperature2 = +10
+print(f"Temperatura è: {temperature1:+}")
+print(f"Temperatura è: {temperature2:+}")
+
+# mostrare segni , per le migliaia
+price1 = 1000.99
+print(f"Prezzo1 è: {price1:,}")
 
 # indici nominali
 prova = "Ciao sono Francesca e ho {eta}, compiuti il {mese} del {anno}"
