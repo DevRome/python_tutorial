@@ -95,3 +95,30 @@ def calcolaGuadagno(costoStanza, tasse = 21, commPiattaforma = 5):
 print(f"Guadagno della stanza al netto: {calcolaGuadagno(100)}")
 
 #--------------------------------------------------------------------------------------
+
+# .:: High Order Functions ::.
+# sono funzioni che 
+# - accettano funzioni come argomento 
+# - funzioni che restituiscono una funzione
+
+# es1:
+def loud(text):
+    return text.upper()
+
+def quiet(text):
+    return text.lower()
+
+def hello(func): # questa è la HOF, alla quale passo una funzione come argomento
+    text = func("Hello")
+    print(text)
+
+hello(loud)
+
+# es2:
+def divisore(x):
+    def dividendo(y):
+        return y / x
+    return dividendo
+
+divisione = divisore(2)
+print(divisione(10))

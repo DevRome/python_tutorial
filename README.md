@@ -1,3 +1,7 @@
+*** Fonti del tutorial ***
+YouTube - BroCode - Python Full Course for free 
+YouTube - Midoli - Python Tutorial  
+
 *** Differenze tra le collezioni dati ***
 # liste, tuple, set e dictionary
 
@@ -33,7 +37,7 @@ sono collezioni ordinate ma immutabili
 sono collezioni non ordinate e perciò non indicizzate. Non permettono duplicati; quindi gli elementi non si possono modificare.
 
 # dictionary
-sono collezioni rodinate e modificabili (dalla versione 3.7). Non permettono duplicati
+sono collezioni ordinate e modificabili (dalla versione 3.7). Non permettono duplicati
 
 
 *** La cartella __pycache__ ***

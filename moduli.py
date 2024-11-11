@@ -1,5 +1,5 @@
-# un modulo è come se fosse una libreria, un insieme di funzioni che vogliamo includere nel nostro progetto per svolgere determinate operazioni 
-
+# un modulo è come se fosse una libreria, un insieme di classi, funzioni che vogliamo includere nel nostro progetto per svolgere determinate operazioni 
+# i moduli sono usati in programmazione modulare, ossia separare un programma in parti
 
 # esempio di modulo built-in di python
 import platform
@@ -30,4 +30,9 @@ print(x)
 # qui sotto abbiamo importato solo la variabile persona1
 from modulo_prova import persona1
 print(persona1["nome"])
+
+# importo una classe dal file modulo_prova_2.py
+from modulo_prova_2 import Car
+car1 = Car()
+car1.getMaxSpeed()
 
